@@ -1,4 +1,4 @@
-package com.calcetto;
+package com.calcetto.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 
-public class HelloController {
+public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
+	public String pageHome(ModelMap model) {
 		model.addAttribute("baseUrl", "/Calcetto");
-		model.addAttribute("message", "Hello world!");
-		return "hello";
+		model.addAttribute("message", "");
+		return "home";
 	}
 }

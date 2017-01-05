@@ -19,9 +19,7 @@
 
 	<tiles:putAttribute name="body">
 
-
 			<h2>${message}</h2>
-
 
 	</tiles:putAttribute>
 

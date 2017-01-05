@@ -12,18 +12,26 @@
 	<link rel="shortcut icon" type="image/x-icon" href="${baseUrl}/img/favicon.ico" />
 	<title><spring:message code="label.app.title"/></title>
 
-	<!-- CSS -->
+	<!------------------- CSS ------------------->
+
 	<!-- Jquery UI -->
 	<link rel="stylesheet" type="text/css" media="screen" href="${baseUrl}/css/jquery-ui.min.css">
 
 	<!-- Bootstrap -->
 	<link href="${baseUrl}/css/bootstrap.min.css" rel="stylesheet">
+	<link href="${baseUrl}/css/bootstrap-switch.min.css" rel="stylesheet">
+	<!-- Sticky footer personalizzato -->
+	<link href="${baseUrl}/css/sticky-footer-navbar.css" rel="stylesheet">
 
 	<!-- SB Admin CSS - Include with every page -->
+	<link rel="stylesheet" type="text/css" media="screen" href="${baseUrl}/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="${baseUrl}/css/sb-admin.css">
 
+	<!-- Page-Level Plugin CSS - Tables -->
+	<link rel="stylesheet" type="text/css" media="screen" href="${baseUrl}/css/dataTables/dataTables.bootstrap.css">
 
-	<!-- JAVASCRIPT -->
+
+	<!------------------- JAVASCRIPT ------------------->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="${baseUrl}/js/jquery-2.1.0.min.js"></script>
@@ -31,6 +39,12 @@
 	<script src="${baseUrl}/js/jquery-ui.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="${baseUrl}/js/bootstrap.min.js"></script>
+
+	<!-- Altro JS -->
+	<script src="${baseUrl}/js/dataTables/jquery.dataTables.js"></script>
+	<script src="${baseUrl}/js/dataTables/dataTables.bootstrap.js"></script>
+	<script src="${baseUrl}/js/dataTables/datetime-moment-2014-12-18.js"></script>
+	<script src="${baseUrl}/js/moment-with-locales-2.9.0.js"></script>
 
 
 	<script>

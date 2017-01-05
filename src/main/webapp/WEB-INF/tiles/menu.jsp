@@ -19,20 +19,18 @@
 
 				<ul class="nav navbar-nav">
 					<li></li>
-					<li class="dropdown ${mnuLv1Pos == 'Simulazioni'?'active':''}">
-						<a href="#" class="dropdown-toggle active"
-						   data-toggle="dropdown"><spring:message code="label.app.title"/> <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-
-							<li class="${mnuLv2Pos == 'CreaSimulazioneBP'?'active':''}">
-								<a href="${baseUrl}/newForwardSimulationBP"><spring:message code="label.app.title"/></a>
-							</li>
-
-						</ul>
+					<li class="dropdown ${mnuLv1Pos == 'Classifica'?'active':''}">
+						<a href="${baseUrl}/pageClassifica" class="dropdown-toggle"><spring:message code="label.menu.classifica"/></a>
+					</li>
+					<li class="dropdown ${mnuLv1Pos == 'Giocatori'?'active':''}">
+						<a href="${baseUrl}/pageGiocatori" class="dropdown-toggle"><spring:message code="label.menu.giocatori"/></a>
+					</li>
+					<li class="dropdown ${mnuLv1Pos == 'Partite'?'active':''}">
+						<a href="${baseUrl}/pagePartite" class="dropdown-toggle"><spring:message code="label.menu.partite"/></a>
 					</li>
 
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
+				<%--<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							<i class="fa fa-user fa-fw"></i> ${user.matricola}<!-- Benvenuto ${user.nome} ${user.cognome} --> <i class="fa fa-caret-down"></i>
@@ -46,8 +44,7 @@
 							</li>
 						</ul>
 					</li>
-				</ul>
-
+				</ul>--%>
 		</div>
 	</div>
 </div>
