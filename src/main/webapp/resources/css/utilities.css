@@ -1,0 +1,22 @@
+.btn-circle {
+	width: 36px;
+	font-size: 18px;
+	border-radius: 18px;
+	height: 36px;
+}
+
+#msgError {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.dateDisable {
+	font-style: oblique;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+
+.disabledClass {
+	pointer-events: none;
+	opacity: 0.4;
+}
